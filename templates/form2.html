@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACME</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="well text-center">
+            <h1>Empresa ACME</h1>
+        </div>
+    </div>
+
+    <form action="/edit/{{id}}" method="POST" class="form">
+        <input type="text" id="usuario" name="usuario" value= "{{usuario}}">
+        <input type="password" id="clave" name="clave" value= "{{clave}}">
+
+
+        <input type="submit">
+
+    </form>
+    <p><a href='/'>Menu de inicio</a></p>
+</body>
+</html>

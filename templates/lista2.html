@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>ACME</title>
+</head>
+<body>
+
+    <div class="container well">
+        <div class="text-center">
+            <h1>Empresa ACME</h1>
+        </div>
+    </div>
+    <div class="container">
+
+    {% for x in user %}
+	{{ x.id }} {{x.user }} <a href='/edit/{{x.id}}'>editar</a> <a href='/delete/{{x.id}}'>borrar</a></br>
+{%endfor%}
+
+    </form>
+    <p><a href='/'>Menu de inicio</a></p>
+</body>
+</html>
+
